@@ -41,7 +41,7 @@ class StudentController extends Controller
                     'value' => $grade['value'],
                 ]);
             }
-            return response()->json(['message' => 'Student created successfully'], 201);
+            return response()->json(['message' => 'Student created successfully'], 200);
         }
 
     }

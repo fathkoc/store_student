@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "8c4022e2-c1d5-4ca1-8436-1d5b334b3486",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"Ali\",\r\n\"surname\": \"Yilmaz\",\r\n\"stdNumber\": \"B012X00012\",\r\n\"grades\": [\r\n{\r\n\"code\": \"MT101\",\r\n\"value\": 90\r\n}, {\r\n\"code\": \"PH101\",\r\n\"value\": 75\r\n}, {\r\n\"code\": \"CH101\",\r\n\"value\": 60\r\n}, {\r\n\"code\": \"MT101\",\r\n\"value\": 70\r\n}, {\r\n\"code\": \"HS101\",\r\n\"value\": 65\r\n}\r\n]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/studentsCreate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"studentsCreate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AllStudent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/studentsAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"studentsAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"Ali\",\r\n\"surname\": \"Yilmaz\",\r\n\"stdNumber\": \"B012X00012\",\r\n\"grades\": [\r\n{\r\n\"code\": \"MT101\",\r\n\"value\": 100\r\n}, {\r\n\"code\": \"PH101\",\r\n\"value\": 75\r\n}, {\r\n\"code\": \"CH101\",\r\n\"value\": 60\r\n}, {\r\n\"code\": \"MT101\",\r\n\"value\": 70\r\n}, {\r\n\"code\": \"HS101\",\r\n\"value\": 65\r\n}\r\n]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/studentsUpdate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"studentsUpdate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
