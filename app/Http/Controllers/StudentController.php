@@ -8,6 +8,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Student;
 use Illuminate\Http\Request;
+use App\Models\Grade;
 
 class StudentController extends Controller
 {
@@ -47,9 +48,9 @@ class StudentController extends Controller
 
     public function update(Request $request)
     {
-      
-        $student = Student::where('stdNumber', $request->stdNumber)->firstOrFail();
         
+        $student = Student::where('stdNumber', $request->stdNumber)->firstOrFail();
+              
         $validatedData = $request->validate([
             'name' => 'string',
             'surname' => 'string',
