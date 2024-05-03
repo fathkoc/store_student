@@ -5,8 +5,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::post('/studentsCreate', [StudentController::class, 'create']);
-
 Route::post('/studentsUpdate', [StudentController::class, 'update']);
+Route::get('/studentsAll', [StudentController::class, 'index']);
 
 //Route::delete('/students/{id}', [StudentController::class, 'destroy']);
 
